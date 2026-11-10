@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cup2Eat – Coffee in a cup you can eat</title>
+<link rel="icon" href="images/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header><div class="wrap"><a class="brand" href="#"><img src="images/logo.jpg" alt="">Cup2Eat</a>
+<nav><a href="#">Home</a><a href="#menu">Menu</a><button class="cartbtn" id="cb" aria-label="Open cart">Cart (<span id="cc">0</span>)</button></nav></div></header>
+
+<main>
+<section class="view" id="v-home">
+<div class="hero"><div class="wrap stage">
+<svg class="swirl" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 88C2 50 30 38 40 62S66 104 74 62 96 8 100 34"/></svg>
+<h1 class="ht"><span class="r1"><span class="a">An Edible</span><span class="b">Coffee</span></span><span class="c">Experience</span></h1>
+<img class="cup" src="images/hero.png" alt="Waffle cups filled with cappuccino and whipped cream">
+<span class="bean b1"></span><span class="bean b2"></span><span class="bean b3"></span><span class="bean b4"></span><span class="bean b5"></span><span class="bean b6"></span><span class="bean b7"></span>
+<div class="below"><div class="side"><b>Single-Origin</b><p>Fresh espresso, silky milk and a crisp waffle cup with a chocolate lining.</p></div><a class="stick" href="#menu">Order<br>now</a></div>
+</div></div>
+<svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V40C240 0 420 0 720 36s520 40 720 0v44z" fill="#0f4a3a"/></svg>
+<div class="green"><div class="wrap"><img src="images/latte.jpg" alt="Two lattes in waffle cups on black saucers"><div>
+<h2>Crafted beyond the ordinary</h2><p>Fresh espresso, silky milk and a waffle cup baked to stay crunchy. A chocolate lining keeps every sip leak-free until the last bite.</p></div></div></div>
+<div class="sec"><div class="wrap"><h2>Popular cups</h2><p class="sub">Our customers’ favourites, ready to order.</p><div class="grid" id="feat"></div>
+<p style="margin-top:1.5rem"><a class="btn alt" href="#menu">Full menu</a></p></div></div>
+<div class="sec" style="padding-top:0"><div class="wrap"><div class="why">
+<div><h3>Zero waste</h3><p>The cup is the dessert. No plastic, no paper, no bin.</p></div>
+<div><h3>Birthday ready</h3><p>Cone cups with candles and sprinkles for parties and gifting.</p></div>
+<div><h3>Made fresh</h3><p>Every cup is filled to order so the wafer stays crisp.</p></div></div></div></div>
+<div class="cta"><div class="wrap"><h2>Find your signature cup</h2><a class="btn" href="#menu">Order now</a></div></div>
+</section>
+
+<section class="view" id="v-menu"><div class="sec"><div class="wrap"><h2>Our menu</h2><p class="sub">Pick your cups, add to cart and pay by QR at checkout.</p>
+<div class="chips" id="chips"></div><div class="grid" id="mgrid"></div></div></div></section>
+
+<section class="view" id="v-admin"><div class="sec"><div class="wrap" id="adm"></div></div></section>
+</main>
+
+<footer><div class="wrap"><p class="big">cup2eat</p><div class="fg"><div><h3 style="color:var(--gold)">Visit us</h3><p>Come by, or order online and collect.<br><a id="mapl" target="_blank" rel="noopener">Open in Google Maps</a></p><p><a href="#menu">Menu</a> · <a href="#admin">Admin</a></p></div>
+<iframe id="map" title="Cup2Eat on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<p class="small">© Cup2Eat. All rights reserved.</p></div></footer>
+
+<div class="ov" id="drawer"><div class="pan"><button class="x" data-close aria-label="Close">×</button><h2>Your cart</h2><div id="cl"></div></div></div>
+<div class="ov" id="modal"><div class="pan"><button class="x" data-close aria-label="Close">×</button><div id="mb"></div></div></div>
+<div id="toast" role="status"></div>
+
+
+<script src="js/app.js"></script>
+</body></html>
